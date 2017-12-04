@@ -10,7 +10,7 @@ $(document).ready(function(){
     h1.css({opacity: 0, display: 'block'})
     p.css({opacity: 0, display: 'block'})
     
-    $('footer').find('.wrapper').css('min-height', '50vh')
+    $('footer').find('.wrapper').css({'min-height': '50vh', 'max-height': '50vh', 'height': '50vh'})
     
     $('.centeredContainer').each(function(){
         
