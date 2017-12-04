@@ -111,7 +111,7 @@ $(document).ready(function(){
 
     function checkNavigationBounds(){
         if($('html, body').scrollTop() > 0){
-                $('.navItem').css({'color': '#61cca2'})
+                $('.navItem').animate({'color': '#61cca2'})
             }else{
                 $('.navItem').css({'color': '#ffffff'})
             }
@@ -124,7 +124,7 @@ $(document).ready(function(){
     })
     $('.navItem').mouseleave(function(){
         $(this).find('.square').fadeIn(100)
-        $(this).finish().animate({marginLeft: $(this).width() - $(this).find('.square').width()}, 300)
+        $(this).finish().animate({marginLeft: $(this).width() - $(this).find('.square').width() + 10}, 300)
         console.log('Hover out')
     })
     $('.navItem').click(function(){
