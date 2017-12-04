@@ -2,10 +2,10 @@ body {
     text-align: center;
     color: #00000;
     border-radius:5px; 
-    background:#61cca2;
+    background:#61cca2 !important;
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     font-weight: 300;
     font-size: 125%;
 }
@@ -13,14 +13,16 @@ body {
 h1{
     margin: 0;
     padding: 0;
-    font-weight: 100;
+    font-weight: 100 !important;
     font-size: 200%;
 }
 
 p{
+    font-size: 130% !important;
     margin-top: 20px;
     padding: 0;
 }
+
 #contact{
     text-align:center;
     font-style: oblique;
@@ -35,6 +37,9 @@ p{
 }
 #Logo{
     color: #ffffff;
+}
+#Logo p, #Logo h1{
+    display: none;
 }
 #Login{
     background: #ffffff;        /*I'd say we go with white for all sections - looks more modern imo*/
@@ -101,8 +106,8 @@ p{
 #BackToTop{
     display: none;
     position: fixed;
-    bottom: 64px;
-    right: 64px;
+    bottom: 32px;
+    right: 32px;
     width: 64px;
     height: 64px;
     background: #61cca266;
@@ -118,12 +123,12 @@ p{
     right: 0;
     top: 50%;
     margin-top: -64px;
-    padding: 0;
     max-width: 10%;
 }
 
 .navItem{
     display: block;
+    opacity: 0;
     line-height: 32px;
     font-size: 30px;
     text-align: right;
@@ -135,5 +140,23 @@ p{
 
 
 .square{
+    font-weight: 300;
     padding-right: 20px;
+}
+
+.itemTitle{
+    font-weight: 100;
+}
+
+footer{
+    color: #ffffff;
+}
+
+.title{
+    font-size: 300%;
+    color: #61cca2;
+}
+
+.fadeIn{
+    opacity: 0;
 }

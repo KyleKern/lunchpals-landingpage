@@ -7,6 +7,7 @@
         </style>
         
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         
@@ -56,10 +57,9 @@
                         <div class="centeredCell">
                             <h1>Choose Your Way Of Signing In</h1>
                             <p>
-                               With LunchPals you can choose how you wish to login!</br>
-                               By allowing users to sign in with out facebook it makes </br>
-                               it simpler sign up, and allows users who don't have a facebook to join in the fun!</br>
-                               
+                               With LunchPals you can choose how you wish to login!<br/>
+                               By allowing users to sign in with out facebook it makes it simpler sign up, 
+                               and allows users who don't have a facebook to join in the fun!
                             </p>
                         </div>
                     </div>
@@ -81,9 +81,9 @@
                         <div class="centeredCell">
                             <h1>Sign In With Facebook</h1>
                             <p>
-                               We also have facebook sign in! You by using this sign in form you can add friends,</br>
-                               which allows you to ask specific people to join you! Facebook signin is the prefered</br>
-                               way to sign in because it allows users more features.</br>
+                               We also provide facebook sign in!<br/>
+                               You by using this sign in form you can add friends, which allows you to ask specific 
+                               people to join you! Using Facebook Signin allows you access to more features!
                             </p>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
-                            <h1>Have A Conversation With Your Pals</h1>
+                            <h1>Communicate With Your Match</h1>
                             <p>
                                 We provide you with an interactive chat for you and your pals you match up with.<br/>
                                 It's a cool, easy and fun way to communicate before meeting up.
@@ -164,7 +164,7 @@
                     </div>
                     <div class="centeredContainer right half">
                         <div class="centeredCell">
-                            <img src="img/Chat.png" ><br>
+                            <img class="product" src="img/Chat.png" ><br>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -177,9 +177,21 @@
         
         <div class="section" id="Location">
             <div class="container">
-                <div class="wrapper">
+                <div class="wrapper faded">
                     
-                    <div class="centeredContainer centered">
+                    <div class="centeredContainer centered fadeOut">
+                        <div class="centeredCell"> 
+                            <h1 class="title">LOCATION</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="centeredContainer left half fadeIn">
+                        <div class="centeredCell">
+                            <img class="product" src="img/Directions.png" ><br>
+                        </div>
+                    </div>
+                    
+                    <div class="centeredContainer right half fadeIn">
                         <div class="centeredCell"> 
                             <h1>Get Accurate Directions</h1>
                             <p>
@@ -187,15 +199,11 @@
                                location of the restaurant. Using Google Maps api you are given accurate and </br>
                                easy to read directions to your destination.</br>
                             </p>
-                
-                    <div class="centered">
-                        <img class="product" src="img/.png"><br>
-                    </div>
-                    
                         </div>
                     </div>
-                
-                 </div>
+                    
+                    
+                </div>
              </div>
         
         </div>
@@ -206,14 +214,16 @@
                     <div class="centeredCell">
                         <p>
                             Copyright &copy; LunchPals 2017 </br>
-                            <a href="https://lunchpals-landingpage-kylekern.c9users.io/about.html"> About </a>    
+                            <a href="about.html"> About </a>    
                             
-                            <a href="https://lunchpals-landingpage-kylekern.c9users.io/contact.html"> Contact </a>
+                            <a href="contact.html"> Contact </a>
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script type="text/javascript" src="java.js"></script>
 </html>
