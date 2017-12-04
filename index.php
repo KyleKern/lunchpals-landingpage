@@ -6,13 +6,21 @@
             @import url("css/style.css");
         </style>
         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
+        <div id="ScrollDown">
+            <span>Scroll Down</span>
+            &#10549;
+        </div>
         
         <div id="BackToTop">
             &#8593;
+        </div>
+        
+        <div id="SignUp">
+            <h1>Sign Up Now!</h1>
         </div>
         
         <div id="Navigation">
@@ -28,6 +36,7 @@
                   <div class="centered full">
                       <img id="LogoPicture" src="img/LunchPalsLogo.png" alt="Logo">
                   </div>
+                  <div class="centered">
                     <h1>Meet New People And Explore New Places</h1>
                     <p>
                         LunchPals is an easy and convenient way to connect you with other likeminded people and explore new and exciting places. 
@@ -37,6 +46,7 @@
                         LunchPals also wants you to be able to find matches safely. 
                         To allow this we are only matching at public places and allow you to rate each person you share a meal with.
                     </p>
+                    </div>
                 </div>
                 </div>
         </div>
@@ -157,8 +167,8 @@
                         <div class="centeredCell">
                             <h1>Communicate With Your Match</h1>
                             <p>
-                                We provide you with an interactive chat for you and your pals you match up with.<br/>
-                                It's a cool, easy and fun way to communicate before meeting up.
+                                We provide you with an interactive chat for you to connect to Pals you matched up with.<br/>
+                                It's a cool, easy and fun way to communicate before - and after - meeting up.
                             </p>
                         </div>
                     </div>
@@ -177,27 +187,21 @@
         
         <div class="section" id="Location">
             <div class="container">
-                <div class="wrapper faded">
+                <div class="wrapper">
                     
-                    <div class="centeredContainer centered fadeOut">
-                        <div class="centeredCell"> 
-                            <h1 class="title">LOCATION</h1>
-                        </div>
-                    </div>
-                    
-                    <div class="centeredContainer left half fadeIn">
+                    <div class="centeredContainer left half">
                         <div class="centeredCell">
-                            <img class="product" src="img/Directions.png" ><br>
+                            <img class="product" src="img/Directions.png" >
                         </div>
                     </div>
                     
-                    <div class="centeredContainer right half fadeIn">
+                    <div class="centeredContainer right half">
                         <div class="centeredCell"> 
                             <h1>Get Accurate Directions</h1>
                             <p>
-                               Once you and your pals decided on a time, you will be given directions to the</br>
-                               location of the restaurant. Using Google Maps api you are given accurate and </br>
-                               easy to read directions to your destination.</br>
+                               Once you and your Pals decided on a time, you will be given directions to the
+                               location of the restaurant.<br>
+                               LunchPals is using the Google Maps API to provide you with accurate and fast navigation.
                             </p>
                         </div>
                     </div>
@@ -209,16 +213,40 @@
         </div>
         
         <footer class="section">
-            <div class="wrapper">
-                <div class="centeredContainer centered">
-                    <div class="centeredCell">
-                        <p>
-                            Copyright &copy; LunchPals 2017 </br>
-                            <a href="about.html"> About </a>    
-                            
-                            <a href="contact.html"> Contact </a>
-                        </p>
+            <div class="container">
+    
+                <div class="wrapper">
+                    <div class="centeredContainer left half">
+                        <div class="centeredCell">
+                            <h1>Sign Up Today</h1>
+                            <form id="SignUpForm">
+                            <div class="form-group">
+                                <label for="Mail">Email</label>
+                                <input type="text" class="form-control" id="Mail" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="FirstName">First Name</label>
+                                <input type="text" class="form-control" id="FirstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="LastName">Last Name</label>
+                                <input type="text" class="form-control" id="LastName" placeholder="Last Name">
+                            </div>
+                            <button type="submit" id="SignUpBtn" class="btn btn-outline-dark">
+                                Sign Up
+                            </button>
+                            </form>
+                      </div>
                     </div>
+                    <div class="centeredContainer right half">
+                        <div class="centeredCell">
+                            <div class="centered">
+                                <a href="#"><h1><span>&#8681;</span> Download LunchPals</h1></a>
+                                <a href="about.html"><p>About Us</p></a>
+                            </div>
+                        </div>
+                    </div>
+                        
                 </div>
             </div>
         </footer>

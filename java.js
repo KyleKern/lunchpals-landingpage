@@ -1,4 +1,6 @@
-
+var widthToAnimate
+var timerToShowScrollDown = 5000
+var scrollDownIntervall
 $(document).ready(function(){
     
     scrollTo(0, 750)
@@ -45,24 +47,38 @@ $(document).ready(function(){
         })
     })
     
+    $('.left').css({marginLeft: -100, opacity: 0})
+    $('.right').css({marginRight: -100, opacity: 0})
+    widthToAnimate = $('.centered').find('.product').width()
+    $('.centered').find('.product').css({width: 50, opacity: 0})
+    
+    scrollDownIntervall = setInterval(function(){
+        timerToShowScrollDown -= 100
+        if(timerToShowScrollDown <= 0){
+            clearInterval(scrollDownIntervall)
+            $('#ScrollDown').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(400)
+        }
+    }, 100)
+    
 })
 
 /* ######################## SCROLLING ######################## */
     
-    var scrollIntervall = 1500;
-    var timer = scrollIntervall;
+    var scrollEnableAfter = 1500
+    var scrollIntervall = 1000
+    var timer = scrollEnableAfter
     var interval
     var section = 0
     
     $(window).on('mousewheel', function(e){
         e.preventDefault()
-        if(timer >= scrollIntervall){
+        if(timer >= scrollEnableAfter){
             if(e.originalEvent.wheelDelta / 120 > 0) {
                 console.log('scrolling up !')
-                scroll('up')
+                if(section > 0) scroll('up')
             }else{
-                console.log('scrolling down !');
-                scroll('down')
+                console.log('scrolling down !')
+                if(section < $('.wrapper').length - 1) scroll('down')
             }
         }
     
@@ -72,11 +88,11 @@ $(document).ready(function(){
         if (e.keyCode == 38 || e.keyCode == 40) e.preventDefault()
         if(timer >= scrollIntervall){
             if (e.keyCode == 38) {
-                scroll('up')
+                if(section > 0) scroll('up')
                 return true
             }
             if(e.keyCode == 40){
-                scroll('down')
+                if(section < $('.wrapper').length - 1) scroll('down')
                 return true
             }
         }
@@ -85,32 +101,51 @@ $(document).ready(function(){
     function scroll(direction){
         timer = 0;
         clearInterval(interval)
+        
+        fadeOutCurrentSection()
+        
     	if(direction == 'up') {
             section--;
-            if(section < 0) section = 0;
+            if(section < 0){
+                section = 0
+            }
         }else if(direction == 'down'){
             section++;
-            if(section > $('.wrapper').length - 1) section = $('.wrapper').length - 1;
+            if(section > $('.wrapper').length - 1){
+                section = $('.wrapper').length - 1
+            }
         }
         console.log("Section to Scroll: " + section)
         
-        scrollTo($("#" + section).offset().top, scrollIntervall / 1.5)
+        scrollTo($("#" + section).offset().top, scrollIntervall)
             
         interval = setInterval(function () { 
-            timer += 50; }, 50);
+            timer += 50 }, 50)
     }
     
     function scrollTo(offset, duration){
+        clearInterval(scrollDownIntervall)
+        $('#ScrollDown').fadeOut(300)
         checkNavigationBounds()
+        $("#" + section).find('.left').animate({marginLeft: 0, opacity: 1}, scrollIntervall)
+        $("#" + section).find('.right').animate({marginRight: 0, opacity: 1}, scrollIntervall)
+        $("#" + section).find('.centered').find('.product').animate({width: widthToAnimate, opacity: 1}, scrollIntervall)
         $('html,body').animate({scrollTop: offset}, duration, function(){
                     checkBackToTopBounds()
-                    if($('#' + section).hasClass('faded')){
-                        var fader = $('#' + section)
-                        fader.find('.fadeOut').fadeOut(500, function(){
-                        fader.find('.fadeIn').animate({opacity: 1},1000)
-                        })
-                    }
                 })
+    }
+    
+    function fadeOutCurrentSection(){
+        var currentSection = $("#" + section)
+        currentSection.find('.left').animate({opacity: 0}, 500, function(){
+            currentSection.find('.left').css({marginLeft: -100})
+        })
+        currentSection.find('.right').animate({opacity: 0}, 500, function(){
+            currentSection.find('.right').css({marginRight: -100, opacity: 0})
+        })
+        currentSection.find('.centered').find('.product').animate({opacity: 0}, 500, function() {
+            currentSection.find('.centered').find('.product').css({width: 100})
+        })
     }
     
     
@@ -157,7 +192,26 @@ $(document).ready(function(){
         console.log('Hover out')
     })
     $('.navItem').click(function(){
+        fadeOutCurrentSection()
         section = $('#' + $(this).find('.itemTitle').text()).find('.wrapper').first().attr('id')
         scrollTo($('#' + $(this).find('.itemTitle').text()).find('.wrapper').first().offset().top, 750)
     })
+    
+    $('#SignUp').click(function() {
+        fadeOutCurrentSection()
+        section = $('footer').find('.wrapper').first().attr('id')
+        scrollTo($('footer').find('.wrapper').first().offset().top, 750)
+    })
+
+    $('#SignUpBtn').click(function(e) {
+        e.preventDefault()
+        resetForm($('#SignUpForm'));
+    })
+    
+    function resetForm($form) {
+    $form.find('input:text, input:password, input:file, select, textarea').val('');
+    $form.find('input:radio, input:checkbox')
+         .removeAttr('checked').removeAttr('selected');
+}
+
     

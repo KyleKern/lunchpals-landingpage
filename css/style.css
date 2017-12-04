@@ -19,6 +19,7 @@ h1{
 
 p{
     font-size: 130% !important;
+    font-weight: 200;
     margin-top: 20px;
     padding: 0;
 }
@@ -65,6 +66,7 @@ p{
 }
 .centered{
     margin: auto;
+    text-align: center;
 }
 
 .centeredCell{
@@ -103,19 +105,59 @@ p{
 .section{
 }
 
-#BackToTop{
-    display: none;
+
+#SignUp, #BackToTop, #ScrollDown{
     position: fixed;
+    background: #61cca299;
+    color: #ffffff;
+    border: 1px solid #61cca2;
+    cursor: pointer;
+}
+
+#SignUp{
+    top: 32px;
+    right: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 8px;
+}
+
+#SignUp h1{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+#BackToTop, #ScrollDown{
+    display: none;
     bottom: 32px;
     right: 32px;
     width: 64px;
     height: 64px;
-    background: #61cca266;
-    color: white;
-    line-height: 64px;
     font-size: 48px;
-    border: 1px solid #61cca2;
-    cursor: pointer;
+    line-height: 64px;
+}
+
+#BackToTop{
+    text-align: center;
+}
+
+#ScrollDown{
+    -ms-transform: rotate(16deg); /* IE 9 */
+    -webkit-transform: rotate(16deg); /* Chrome, Safari, Opera */
+    transform: rotate(16deg);
+}
+
+#ScrollDown span{
+    position: absolute;
+    width: 200px;
+    font-weight: 100;
+    font-size: 14px;
+    -ms-transform: rotate(-16deg); /* IE 9 */
+    -webkit-transform: rotate(-16deg); /* Chrome, Safari, Opera */
+    transform: rotate(-16deg);
+    bottom: -16px;
 }
 
 #Navigation{
@@ -159,4 +201,19 @@ footer{
 
 .fadeIn{
     opacity: 0;
+}
+
+a, a:hover, a:visited{
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 24px;
+}
+
+footer p{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+button{
+    cursor: pointer;
 }
