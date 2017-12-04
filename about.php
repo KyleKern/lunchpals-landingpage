@@ -58,7 +58,7 @@
                     <div class="centeredCell">
                         <p>
                             Copyright &copy; LunchPals 2017 </br>
-                            <a href="index.html"> Home </a>  
+                            <a href="index.php"> Home </a>  
                         </p>
                     </div>
                 </div>
