@@ -105,8 +105,7 @@ p{
 .section{
 }
 
-
-#SignUp, #BackToTop{
+#BackToTop{
     position: fixed;
     background: #61cca299;
     color: #ffffff;
@@ -115,18 +114,11 @@ p{
 }
 
 #SignUp{
+    display: block;
+    position: fixed;
     top: 32px;
     right: 32px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding: 8px;
-}
-
-#SignUp h1{
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
+    width: 100px !important;
 }
 
 #BackToTop, #ScrollDown{

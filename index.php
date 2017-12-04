@@ -19,9 +19,7 @@
             &#8593;
         </div>
         
-        <div id="SignUp">
-            <h1>Sign Up Now!</h1>
-        </div>
+        <img id="SignUp" src="img/SignUpBtn.png" alt="Sign Up">
         
         <div id="Navigation">
             <div class="navItem"><span class="itemTitle">Login</span></div>
