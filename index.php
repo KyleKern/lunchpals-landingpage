@@ -20,16 +20,15 @@
         </div>
         
         <img id="SignUp" src="img/SignUpBtn.png" alt="Sign Up">
-        
-        <div id="Navigation">
-            <div class="navItem"><span class="itemTitle">Login</span></div>
-            <div class="navItem"><span class="itemTitle">Matching</span></div>
-            <div class="navItem"><span class="itemTitle">Chat</span></div>
-            <div class="navItem"><span class="itemTitle">Location</span></div>
-        </div>
-        
+
+        <div class="navItem"><span class="itemTitle">Login</span></div>
+        <div class="navItem"><span class="itemTitle">Matching</span></div>
+        <div class="navItem"><span class="itemTitle">Chat</span></div>
+        <div class="navItem"><span class="itemTitle">Location</span></div>
+
+
         <div class="section" id="Logo">
-            <div class="container">
+            <div class="contain">
                 <div class="wrapper">
                   <div class="centered full">
                       <img id="LogoPicture" src="img/LunchPalsLogo.png" alt="Logo">
@@ -37,20 +36,20 @@
                   <div class="centered">
                     <h1>Meet New People And Explore New Places</h1>
                     <p>
-                        LunchPals is an easy and convenient way to connect you with other likeminded people and explore new and exciting places. 
+                        LunchPals is an easy and convenient way to connect you with other likeminded people and explore new and exciting places.
                         Focusing on students first we enable you to meet new friends when moving to new campuses and exploring your current campus.
                         The first release of LunchPals will be on android, but don't worry: iOs is on it's way!
                         <br/><br/>
-                        LunchPals also wants you to be able to find matches safely. 
+                        LunchPals also wants you to be able to find matches safely.
                         To allow this we are only matching at public places and allow you to rate each person you share a meal with.
                     </p>
                     </div>
                 </div>
                 </div>
         </div>
-        
+
         <!-- ###################################### LOGIN ######################################-->
-        
+
         <div class="section" id="Login">
             <div class="wrapper">
                 <div class="half centered centeredContainer">
@@ -59,14 +58,14 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="contain">
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
                             <h1>Choose Your Way Of Signing In</h1>
                             <p>
                                With LunchPals you can choose how you wish to login!<br/>
-                               By allowing users to sign in with out facebook it makes it simpler sign up, 
+                               By allowing users to sign in with out facebook it makes it simpler sign up,
                                and allows users who don't have a facebook to join in the fun!
                             </p>
                         </div>
@@ -78,7 +77,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
@@ -90,19 +89,19 @@
                             <h1>Sign In With Facebook</h1>
                             <p>
                                We also provide facebook sign in!<br/>
-                               You by using this sign in form you can add friends, which allows you to ask specific 
+                               You by using this sign in form you can add friends, which allows you to ask specific
                                people to join you! Using Facebook Signin allows you access to more features!
                             </p>
                         </div>
                     </div>
                     <div class="clear"></div>
                 </div>
-                
+
             </div>
         </div>
-        
+
         <!-- ###################################### MATCHING ######################################-->
-        
+
         <div class="section" id="Matching">
             <div class="wrapper">
                 <div class="half centered centeredContainer">
@@ -111,9 +110,9 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="container">
-                
+
+            <div class="contain">
+
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
@@ -133,7 +132,7 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                
+
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
@@ -152,14 +151,14 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                
+
             </div>
         </div>
-        
+
         <!-- ###################################### CHAT ######################################-->
-        
+
         <div class="section" id="Chat">
-            <div class="container">
+            <div class="contain">
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
@@ -180,21 +179,21 @@
 
              </div>
         </div>
-        
+
         <!-- ###################################### LOCATION ######################################-->
-        
+
         <div class="section" id="Location">
-            <div class="container">
+            <div class="contain">
                 <div class="wrapper">
-                    
+
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
                             <img class="product" src="img/Directions.png" >
                         </div>
                     </div>
-                    
+
                     <div class="centeredContainer right half">
-                        <div class="centeredCell"> 
+                        <div class="centeredCell">
                             <h1>Get Accurate Directions</h1>
                             <p>
                                Once you and your Pals decided on a time, you will be given directions to the
@@ -203,16 +202,16 @@
                             </p>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
              </div>
-        
+
         </div>
-        
+
         <footer class="section">
-            <div class="container">
-    
+            <div class="contain">
+
                 <div class="wrapper">
                     <div class="centeredContainer left half">
                         <div class="centeredCell">
@@ -240,11 +239,12 @@
                         <div class="centeredCell">
                             <div class="centered">
                                 <a href="#"><h1><span>&#8681;</span> Download LunchPals</h1></a>
+                                <p>Coming Soon&trade;</p>
                                 <a href="about.php"><p>About Us</p></a>
                             </div>
                         </div>
                     </div>
-                        
+
                 </div>
             </div>
         </footer>
@@ -252,4 +252,5 @@
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script type="text/javascript" src="java.js"></script>
+    </body>
 </html>
