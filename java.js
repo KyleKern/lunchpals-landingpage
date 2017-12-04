@@ -1,5 +1,5 @@
 var widthToAnimate
-var timerToShowScrollDown = 5000
+var timerToShowScrollDown = 7500
 var scrollDownIntervall
 $(document).ready(function(){
     
@@ -197,6 +197,11 @@ $(document).ready(function(){
         scrollTo($('#' + $(this).find('.itemTitle').text()).find('.wrapper').first().offset().top, 750)
     })
     
+    $('#ScrollDown').click(function() {
+        var e = $.Event('keydown', {keyCode: 40})
+        $(window).trigger(e)
+    })
+    
     $('#SignUp').click(function() {
         fadeOutCurrentSection()
         section = $('footer').find('.wrapper').first().attr('id')
@@ -212,6 +217,6 @@ $(document).ready(function(){
     $form.find('input:text, input:password, input:file, select, textarea').val('');
     $form.find('input:radio, input:checkbox')
          .removeAttr('checked').removeAttr('selected');
-}
+    }
 
     
