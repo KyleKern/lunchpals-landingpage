@@ -1,6 +1,7 @@
 var widthToAnimate
 var timerToShowScrollDown = 7500
 var scrollDownIntervall
+var scrollEnabled = false;
 $(document).ready(function(){
     
     scrollTo(0, 750)
@@ -21,14 +22,20 @@ $(document).ready(function(){
     $('.wrapper').each(function(){
         $(this).attr('id', val++)
     })
-    
+
+    var margin = $('.navItem').first().height()
+    var curr = 0
+    var currMargin = [-2, -1, 0, 1]
     $('.navItem').each(function(){
         $(this).html('<span class="square">&#8213;</span>' + $(this).html())
+        $(this).css({marginTop: margin * currMargin[curr++]})
         $(this).trigger('mouseenter')
         $(this).trigger('mouseleave')
     })
     
     $('.navItem').first().trigger('mouseenter').trigger('mouseleave')
+
+    $('#SignUp').css({marginRight: -$(this).width() / 2})
     
     var logo = $('#Logo').find('img').first()
     logo.css({marginTop: $('#Logo').height() / 2 - logo.height() / 2})
@@ -59,6 +66,11 @@ $(document).ready(function(){
             $('#ScrollDown').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(400)
         }
     }, 100)
+
+    setTimeout(function(){
+        scrollEnabled = true;
+        console.log('scroll activated')
+    }, 3500)
     
 })
 
@@ -69,16 +81,18 @@ $(document).ready(function(){
     var timer = scrollEnableAfter
     var interval
     var section = 0
-    
+
     $(window).on('mousewheel', function(e){
         e.preventDefault()
-        if(timer >= scrollEnableAfter){
-            if(e.originalEvent.wheelDelta / 120 > 0) {
-                console.log('scrolling up !')
-                if(section > 0) scroll('up')
-            }else{
-                console.log('scrolling down !')
-                if(section < $('.wrapper').length - 1) scroll('down')
+        if(scrollEnabled) {
+            if (timer >= scrollEnableAfter) {
+                if (e.originalEvent.wheelDelta / 120 > 0) {
+                    console.log('scrolling up !')
+                    if (section > 0) scroll('up')
+                } else {
+                    console.log('scrolling down !')
+                    if (section < $('.wrapper').length - 1) scroll('down')
+                }
             }
         }
     
@@ -86,14 +100,16 @@ $(document).ready(function(){
     
     $(window).keydown(function(e){
         if (e.keyCode == 38 || e.keyCode == 40) e.preventDefault()
-        if(timer >= scrollIntervall){
-            if (e.keyCode == 38) {
-                if(section > 0) scroll('up')
-                return true
-            }
-            if(e.keyCode == 40){
-                if(section < $('.wrapper').length - 1) scroll('down')
-                return true
+        if(scrollEnabled){
+            if(timer >= scrollIntervall){
+                if (e.keyCode == 38) {
+                    if(section > 0) scroll('up')
+                    return true
+                }
+                if(e.keyCode == 40){
+                    if(section < $('.wrapper').length - 1) scroll('down')
+                    return true
+                }
             }
         }
     })
@@ -158,6 +174,10 @@ $(document).ready(function(){
             }else{
                 $('#BackToTop').fadeOut(300)
             }
+        if($('html, body').scrollTop() >= $("#" + 1).offset().top && $('html, body').scrollTop() < $('html, body').height() - $(window).height()){
+            $('#SignUp').fadeIn(300)
+            $('#SignUp').animate({marginRight: 0}, 500)
+        }
     }
     
     $('#BackToTop').click(function(){
@@ -169,26 +189,36 @@ $(document).ready(function(){
     
 /* ######################## NAVIGATION ######################## */
 
+    $('#SignUp').hover(function() {
+        $(this).attr('src', 'img/SignUpBtnHv.png')
+    }, function () {
+        $(this).attr('src', 'img/SignUpBtn.png')
+    });
+
     function checkNavigationBounds(){
+
         if(section == 0){
             $('.navItem').animate({color: '#ffffff'}, 500)
+            $('#SignUp').animate({marginRight: -$(this).width() / 2}, 500)
+            $('#SignUp').fadeOut(300)
         }else{
             $('.navItem').animate({color: '#61cca2'}, 500)
             if(section == $('.wrapper').last().attr('id')){
-                $('.navItem:nth-last-child(2)').animate({color: '#ffffff'}, 500)
-                $('.navItem').last().animate({color: '#ffffff'}, 500)
+                $('.navItem').last().animate({color: '#ffffff'}, 500).prev().animate({color: '#ffffff'}, 500)
+                $('#SignUp').animate({marginRight: -$(this).width() / 2}, 500)
+                $('#SignUp').fadeOut(300)
             }
         }
     }
 
     $('.navItem').mouseenter(function(){
-        $(this).find('.square').fadeOut(100)
-        $(this).finish().animate({marginLeft: 0}, 300)
+        $(this).find('.square').finish().animate({opacity: 0}, 300)
+        $(this).finish().animate({marginRight: 0}, 300)
         console.log('Hover in')
     })
     $('.navItem').mouseleave(function(){
-        $(this).find('.square').fadeIn(100)
-        $(this).finish().animate({marginLeft: $(this).width() - $(this).find('.square').width()}, 300)
+        $(this).finish().animate({marginRight: - $(this).width() + $(this).find('.square').width()}, 300)
+        $(this).find('.square').finish().animate({opacity: 1}, 300)
         console.log('Hover out')
     })
     $('.navItem').click(function(){
