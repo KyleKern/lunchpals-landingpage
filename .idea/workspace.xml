@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38999f33-8298-4df2-b09e-4dd4a480be0d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.php" afterPath="$PROJECT_DIR$/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.js" afterPath="$PROJECT_DIR$/java.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -74,13 +71,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="java.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="java.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="166">
+              <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
               <folding>
-                <marker date="1512513944000" expanded="true" signature="1046:1053" ph="..." />
+                <marker date="1512515990000" expanded="true" signature="1037:1044" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,11 +97,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/java.js" />
         <option value="$PROJECT_DIR$/about.php" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/java.js" />
       </list>
     </option>
   </component>
@@ -195,12 +192,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512408629431</updated>
       <workItem from="1512408630638" duration="6771000" />
-      <workItem from="1512509212955" duration="5337000" />
+      <workItem from="1512509212955" duration="5987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12108000" />
+    <option name="totallyTimeSpent" value="12758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="815" extended-state="0" />
@@ -259,7 +256,7 @@
         <state relative-caret-position="1710">
           <caret line="114" column="6" lean-forward="true" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
           <folding>
-            <marker date="1512513944000" expanded="true" signature="1046:1053" ph="..." />
+            <marker date="1512515990000" expanded="true" signature="1037:1044" ph="..." />
           </folding>
         </state>
       </provider>
@@ -289,16 +286,6 @@
         <state relative-caret-position="149">
           <caret line="224" column="18" lean-forward="false" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding>
-            <marker date="1512513944000" expanded="true" signature="1046:1053" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -335,6 +322,16 @@
         <state relative-caret-position="171">
           <caret line="242" column="50" lean-forward="false" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="27" column="74" lean-forward="false" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+          <folding>
+            <marker date="1512515990000" expanded="true" signature="1037:1044" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
