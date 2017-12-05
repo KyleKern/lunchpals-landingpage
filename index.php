@@ -171,7 +171,7 @@
                     </div>
                     <div class="centeredContainer right half">
                         <div class="centeredCell">
-                            <img class="product" src="img/Chat.png" ><br>
+                            <img class="product" src="img/Chat.png" >
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -229,7 +229,7 @@
                                 <label for="LastName">Last Name</label>
                                 <input type="text" class="form-control" id="LastName" placeholder="Last Name">
                             </div>
-                            <button type="submit" id="SignUpBtn" class="btn btn-outline-dark">
+                            <button type="submit" id="SignUpBtn" class="btn btn-outline-light">
                                 Sign Up
                             </button>
                             </form>
