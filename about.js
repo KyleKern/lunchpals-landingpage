@@ -24,53 +24,12 @@ $(document).ready(function(){
         $(this).attr('id', val++)
     })
 
-    var margin = $('.navItem').first().height()
-        var curr = 0
-        var currMargin = [-2, -1, 0, 1]
-        $('.navItem').each(function(){
-            $(this).html('<span class="square">&#8213;</span>' + $(this).html())
-            $(this).css({marginTop: margin * currMargin[curr++]})
-            $(this).trigger('mouseenter')
-            $(this).trigger('mouseleave')
-        })
 
-        $('.navItem').first().trigger('mouseenter').trigger('mouseleave')
+        $('.profile').css({height: 'auto'})
+        $('.profile.left').css({marginLeft: -100, opacity: 0})
+        $('.profile.right').css({marginRight: -100, opacity: 0})
 
-        $('#SignUp').css({marginRight: -$(this).width() / 2})
-
-        var logo = $('#Logo').find('img').first()
-        logo.css({marginTop: $('#Logo').height() / 2 - logo.height() / 2})
-        logo.animate({opacity: 1}, 2000, function(){
-            /*console.log("Heights")
-            console.log(logo.css('marginTop'))
-            console.log(h1.height())
-            console.log(p.height())*/
-            logo.animate({marginTop: $('#Logo').height() / 2 - logo.height() / 2 - h1.height() / 2 - p.height() / 2}, 500, function(){
-                h1.animate({opacity: 1}, 500)
-                p.animate({opacity: 1}, 500, function(){
-                    $('.navItem').each(function(){
-                        $(this).animate({opacity: 1}, 1000)
-                    })
-                })
-            })
-        })
-
-        $('.left').css({marginLeft: -100, opacity: 0})
-        $('.right').css({marginRight: -100, opacity: 0})
-        widthToAnimate = $('.centered').find('.product').width()
-        $('.centered').find('.product').css({width: 50, opacity: 0})
-
-        scrollDownIntervall = setInterval(function(){
-            timerToShowScrollDown -= 100
-            if(timerToShowScrollDown <= 0){
-                clearInterval(scrollDownIntervall)
-                $('#ScrollDown').fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(400)
-            }
-        }, 100)
-        setTimeout(function(){
-            scrollEnabled = true;
-            console.log('scroll activated')
-        }, 3500)
+        scrollEnabled = true;
     
 })
 
