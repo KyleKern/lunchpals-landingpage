@@ -113,6 +113,29 @@ $(document).ready(function(){
             }
         }
     })
+
+    var ts
+    $(window).on('touchstart', function (e) {
+        if(!scrollEnabled) e.preventDefault()
+        ts = e.originalEvent.touches[0].clientY
+    })
+
+    $(window).on('touchend', function (e) {
+        if(scrollEnabled) {
+            if (timer >= scrollIntervall) {
+                var te = e.originalEvent.changedTouches[0].clientY
+                if (ts > te + 5) {
+                    e.preventDefault()
+                    if(section < $('.wrapper').length - 1) scroll('down')
+                }else if (ts < te - 5) {
+                    e.preventDefault()
+                    if(section > 0) scroll('up')
+                }
+            }
+        }else{
+            e.preventDefault()
+        }
+    })
     
     function scroll(direction){
         timer = 0;
