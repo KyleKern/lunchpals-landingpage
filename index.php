@@ -238,7 +238,7 @@
                     <div class="centeredContainer right half">
                         <div class="centeredCell">
                             <div class="centered">
-                                <a href="#"><h1><span>&#8681;</span> Download LunchPals</h1></a>
+                                <a><h1><span>&#8681;</span> Download LunchPals</h1></a>
                                 <p>Coming Soon&trade;</p>
                                 <a href="about.php"><p>About Us</p></a>
                             </div>
