@@ -25,7 +25,7 @@ $(document).ready(function(){
     })
 
     console.log(document.URL.indexOf('index.html'))
-    if(document.URL.indexOf("about.php") < 0 && document.URL.indexOf("about.html") < 0){
+    if(document.URL.indexOf("index.php") >= 0 || document.URL.indexOf("index.html") >= 0 || window.location.pathname == ""){
         var margin = $('.navItem').first().height()
         var curr = 0
         var currMargin = [-2, -1, 0, 1]
