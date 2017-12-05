@@ -77,6 +77,13 @@ $(document).ready(function(){
         $('.profile').css({height: 'auto'})
         $('.profile.left').css({marginLeft: -100, opacity: 0})
         $('.profile.right').css({marginRight: -100, opacity: 0})
+        $('#AboutHead .left').css({marginLeft: -100, opacity: 0})
+        $('#AboutHead .right').css({marginRight: -100, opacity: 0})
+
+
+        $('#AboutHead .left').animate({marginLeft: 0, opacity: 1}, 500)
+        $('#AboutHead .right').animate({marginRight: 0, opacity: 1}, 500)
+
         scrollEnabled = true;
     }
     
