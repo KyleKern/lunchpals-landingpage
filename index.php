@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Lunchpals </title>
+        <title> Meal+Match </title>
         <style>
             @import url("css/style.css");
         </style>
-        
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
     </head>
@@ -14,11 +14,11 @@
             <span>Scroll Down</span>
             &#10549;
         </div>
-        
+
         <div id="BackToTop">
             &#8593;
         </div>
-        
+
         <img id="SignUp" src="img/SignUpBtn.png" alt="Sign Up">
 
         <div class="navItem"><span class="itemTitle">Login</span></div>
@@ -31,16 +31,16 @@
             <div class="contain">
                 <div class="wrapper">
                   <div class="centered full">
-                      <img id="LogoPicture" src="img/LunchPalsLogo.png" alt="Logo">
+                      <img id="LogoPicture" src="img/Meal+MatchLogo.png" alt="Logo">
                   </div>
                   <div class="centered">
                     <h1>Meet New People And Explore New Places</h1>
                     <p>
-                        LunchPals is an easy and convenient way to connect you with other likeminded people and explore new and exciting places.
+                        Meal+Match is an easy and convenient way to connect you with other likeminded people and explore new and exciting places.
                         Focusing on students first we enable you to meet new friends when moving to new campuses and exploring your current campus.
-                        The first release of LunchPals will be on android, but don't worry: iOs is on it's way!
+                        The first release of Meal+Match will be on android, but don't worry: iOs is on it's way!
                         <br/><br/>
-                        LunchPals also wants you to be able to find matches safely.
+                        Meal+Match also wants you to be able to find matches safely.
                         To allow this we are only matching at public places and allow you to rate each person you share a meal with.
                     </p>
                     </div>
@@ -64,7 +64,7 @@
                         <div class="centeredCell">
                             <h1>Choose Your Way Of Signing In</h1>
                             <p>
-                               With LunchPals you can choose how you wish to login!<br/>
+                               With Meal+Match you can choose how you wish to login!<br/>
                                By allowing users to sign in with out facebook it makes it simpler sign up,
                                and allows users who don't have a facebook to join in the fun!
                             </p>
@@ -141,9 +141,9 @@
                     </div>
                     <div class="centeredContainer right half">
                         <div class="centeredCell">
-                            <h1>Search For LunchPals</h1>
+                            <h1>Search For Meal+Match</h1>
                             <p>
-                                LunchPals is all about matching you with new people at new exciting restaurants.
+                                Meal+Match is all about matching you with new people at new exciting restaurants.
                                 We will only match you based on your location, so you do not have to worry about driving to far.<br/>
                                 You do not own a car yourself? Just add the option to search for a pick up and one of your Pals will simply give you a ride to your match destination.
                             </p>
@@ -198,7 +198,7 @@
                             <p>
                                Once you and your Pals decided on a time, you will be given directions to the
                                location of the restaurant.<br>
-                               LunchPals is using the Google Maps API to provide you with accurate and fast navigation.
+                               Meal+Match is using the Google Maps API to provide you with accurate and fast navigation.
                             </p>
                         </div>
                     </div>
@@ -238,9 +238,9 @@
                     <div class="centeredContainer right half">
                         <div class="centeredCell">
                             <div class="centered">
-                                <a><h1><span>&#8681;</span> Download LunchPals</h1></a>
+                                <a><h1><span>&#8681;</span> Download Meal+Match</h1></a>
                                 <p>Coming Soon&trade;</p>
-                                <a href="about.php"><p>About Us</p></a>
+                                <a href="about.html"><p>About Us</p></a>
                             </div>
                         </div>
                     </div>
