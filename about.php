@@ -111,7 +111,7 @@
                 <div class="centeredContainer centered">
                     <div class="centeredCell">
                             <p>Coming Soon&trade;<br/>
-                             <a><h1><span>&#8681;</span> Download Meal+Match</h1></a>
+                             <a href="downloads/LunchPals_alpha.apk"><h1><span>&#8681;</span> Download Meal+Match</h1></a>
                             </p>
                             <br/>
                             <a href="index.html"><p>More Information</p></a>
